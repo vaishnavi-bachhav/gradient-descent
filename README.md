@@ -16,21 +16,27 @@ The goal of this project is to study gradient-based optimization by:
 ## Functions Used
 
 ### Convex Function
+
 \[
 f(x) = x^2 + 2\sin(x)
 \]
 
-Gradient:
+**Gradient:**
+
 \[
 f'(x) = 2x + 2\cos(x)
 \]
 
+---
+
 ### Non-Convex Function (Rastrigin, 1D)
+
 \[
 f(x) = 10 + x^2 - 10\cos(2\pi x)
 \]
 
-Gradient:
+**Gradient:**
+
 \[
 f'(x) = 2x + 20\pi \sin(2\pi x)
 \]
