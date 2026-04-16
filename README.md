@@ -49,14 +49,14 @@ gradient-descent/
 ├── README.md
 ├── .gitignore
 └── results/
-
-Requirements
+```
+### Requirements
 
 Install dependencies with:
 
 ```pip install -r requirements.txt```
 
-How to Run
+### How to Run
 
 Run the project using:
 
