@@ -22,3 +22,38 @@ def rastrigin_function(x):
 
 def rastrigin_gradient(x):
     return 2 * x + 20 * np.pi * np.sin(2 * np.pi * x)
+
+
+# -----------------------------
+# Convex function (2D)
+# f(x, y) = x^2 + 2 y^2 + x y
+# ∇f = (2x + y, 4y + x)
+# -----------------------------
+def convex2d_function(xy):
+    x, y = xy[0], xy[1]
+    return x**2 + 2 * y**2 + x * y
+
+
+def convex2d_gradient(xy):
+    x, y = xy[0], xy[1]
+    return np.array([2 * x + y, 4 * y + x], dtype=float)
+
+
+# -----------------------------
+# Himmelblau (2D, non-convex)
+# f(x, y) = (x^2 + y - 11)^2 + (x + y^2 - 7)^2
+# -----------------------------
+def himmelblau_function(xy):
+    x, y = xy[0], xy[1]
+    u = x**2 + y - 11.0
+    v = x + y**2 - 7.0
+    return u**2 + v**2
+
+
+def himmelblau_gradient(xy):
+    x, y = xy[0], xy[1]
+    u = x**2 + y - 11.0
+    v = x + y**2 - 7.0
+    gx = 4.0 * x * u + 2.0 * v
+    gy = 2.0 * u + 4.0 * y * v
+    return np.array([gx, gy], dtype=float)
