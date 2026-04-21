@@ -40,6 +40,7 @@ gradient-descent/
 ├── functions.py
 ├── gradient_descent.py
 ├── main.py
+├── app.py
 ├── plots.py
 ├── requirements.txt
 ├── README.md
@@ -50,10 +51,22 @@ gradient-descent/
 
 Install dependencies with:
 
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 
-### How to Run
+### How to run
 
-Run the project using:
+**Batch experiments (saves figures and `results/summary.csv`):**
 
-```python main.py```
+```bash
+python main.py
+```
+
+**Interactive app (Streamlit + Plotly: change objective, learning rate, and starting point in the browser):**
+
+```bash
+streamlit run app.py
+```
+
+Run that command from the project root (the same folder as `app.py`). Streamlit prints a local URL, usually `http://localhost:8501`, and opens it in your browser if possible. Use the sidebar controls to explore different settings; the plots update when you change a value.
