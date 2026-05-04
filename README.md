@@ -136,10 +136,10 @@ Learning rates:
 
 Expected behavior:
 
-0.0001 → very slow convergence\\
-0.01 → smooth convergence\\
-0.1 → optimal convergence\\
-1.0 → oscillation\\
+- 0.0001 → very slow convergence
+- 0.01 → smooth convergence
+- 0.1 → optimal convergence
+- 1.0 → oscillation
 
 
 ✅ Rastrigin (Non-Convex 1D)
@@ -154,9 +154,9 @@ Learning rates:
 
 Expected behavior:
 
-Small η → stuck near local minimum (~2.98)\\
-Medium η → oscillation\\
-Results depend on starting point\\
+- Small η → stuck near local minimum (~2.98)
+- Medium η → oscillation
+- Results depend on starting point
 
 
 ✅ Convex 2D
@@ -171,9 +171,9 @@ Learning rates:
 
 Expected behavior:
 
-0.01 → slow\\
-0.2 → optimal (reaches (0,0))\\
-0.45 → oscillation\\
+- 0.01 → slow
+- 0.2 → optimal (reaches (0,0))
+- 0.45 → oscillation
 
 ✅ Himmelblau (Non-Convex 2D)
 
@@ -187,9 +187,9 @@ Learning rates:
 
 Expected behavior:
 
-0.001 → slow\\
-0.005 → converges (~130 iterations)\\
-0.018 → optimal (~31 iterations, near (3,2))\\
+- 0.001 → slow
+- 0.005 → converges (~130 iterations)
+- 0.018 → optimal (~31 iterations, near (3,2))
 
 📈 Output
 
@@ -208,6 +208,6 @@ CSV summary
 Code is written in Python as required by the course.
 All results are reproducible from main.py.
 Visualization is used to demonstrate:
-convergence behavior
-learning rate impact
-local minima issues
+- convergence behavior
+- learning rate impact
+- local minima issues
