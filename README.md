@@ -2,8 +2,7 @@
 
 CSI 436/536 Machine Learning – Spring 2026  
 **Group 5:**  
-Leeshma Adari, Shreya Amagowni, Vaishnavi Bachhav,  
-Ariana Nieves, Ain e Muhammad  
+Leeshma Adari, Shreya Amagowni, Vaishnavi Bachhav,  Ariana Nieves, Ain e Muhammad  
 
 ---
 
@@ -70,21 +69,6 @@ h(x,y) = (x^2 + y - 11)^2 + (x + y^2 - 7)^2
 
 ---
 
-## 📁 Project Structure
-gradient-descent-main/
-├── app.py # Streamlit interactive app
-├── experiments.py # Experiment runner
-├── functions.py # All functions and gradients
-├── gradient_descent.py # GD implementation
-├── main.py # Main script (runs all experiments)
-├── plots.py # Visualization utilities
-├── requirements.txt
-├── README.md
-└── results/ # Generated outputs (plots + CSV)
-
-
----
-
 ## ⚙️ Requirements
 
 Python **3.9+ recommended**
@@ -105,22 +89,7 @@ plotly
 
 ## ▶️ How to Run
 
-### 🔹 Run all experiments (recommended)
-
-```bash
-python main.py
-```
-
-This will:
-
-Run gradient descent on all functions
-Generate plots
-Save outputs in:
-``results/``
-Save summary file:
-``results/summary.csv``
-
-### 🔹 Run interactive app (optional)
+### 🔹 Run interactive app 
 
 ```bash
 streamlit run app.py
@@ -137,6 +106,23 @@ Change learning rate
 Change starting point
 Visualize convergence interactively
 
+### 🔹 Run all experiments (optional)
+
+```bash
+python main.py
+```
+
+This will:
+
+Run gradient descent on all functions
+Generate plots
+Save outputs in:
+``results/``
+Save summary file:
+``results/summary.csv``
+
+
+
 🧪 Experiments Reproduced
 ✅ Convex 1D
 
@@ -150,10 +136,10 @@ Learning rates:
 
 Expected behavior:
 
-0.0001 → very slow convergence
-0.01 → smooth convergence
-0.1 → optimal convergence
-1.0 → oscillation
+0.0001 → very slow convergence\\
+0.01 → smooth convergence\\
+0.1 → optimal convergence\\
+1.0 → oscillation\\
 
 
 ✅ Rastrigin (Non-Convex 1D)
@@ -168,9 +154,9 @@ Learning rates:
 
 Expected behavior:
 
-Small η → stuck near local minimum (~2.98)
-Medium η → oscillation
-Results depend on starting point
+Small η → stuck near local minimum (~2.98)\\
+Medium η → oscillation\\
+Results depend on starting point\\
 
 
 ✅ Convex 2D
@@ -185,9 +171,9 @@ Learning rates:
 
 Expected behavior:
 
-0.01 → slow
-0.2 → optimal (reaches (0,0))
-0.45 → oscillation
+0.01 → slow\\
+0.2 → optimal (reaches (0,0))\\
+0.45 → oscillation\\
 
 ✅ Himmelblau (Non-Convex 2D)
 
@@ -201,9 +187,9 @@ Learning rates:
 
 Expected behavior:
 
-0.001 → slow
-0.005 → converges (~130 iterations)
-0.018 → optimal (~31 iterations, near (3,2))
+0.001 → slow\\
+0.005 → converges (~130 iterations)\\
+0.018 → optimal (~31 iterations, near (3,2))\\
 
 📈 Output
 
