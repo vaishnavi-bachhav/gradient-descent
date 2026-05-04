@@ -106,7 +106,14 @@ Change learning rate
 Change starting point
 Visualize convergence interactively
 
-### 🔹 Run all experiments (optional)
+Then test the following cases:
+
+Convex 1D: x0 = 3.0, eta = 0.1 → final x ≈ -0.739
+Rastrigin 1D: x0 = 3.0, eta = 0.0001 → final x ≈ 2.98
+Convex 2D: start = (3,3), eta = 0.2 → final point ≈ (0,0)
+Himmelblau 2D: start = (0,0), eta = 0.018 → final point ≈ (3,2)
+
+### 🔹 Run all experiments
 
 ```bash
 python main.py
